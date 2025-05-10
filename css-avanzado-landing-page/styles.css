@@ -224,3 +224,60 @@ img {
   border-radius: var(--border-radius);
   font-size: var(--font-size-sm);
 }
+
+.skills {
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-xl) 0;
+  background-color: color-mix(
+    in oklch,
+    var(--primary-color) 10%,
+    var(--light-color)
+  );
+}
+
+.skills h2 {
+  font-size: var(--font-size-xl);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  justify-content: center;
+}
+
+.item-skill {
+  position: relative;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  background-color: var(--light-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33% - var(--spacing-md));
+  min-width: 200px;
+  text-align: center;
+  animation: slide 1s ease;
+  animation-timeline: view();
+  animation-range: entry 20% cover 50%;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
