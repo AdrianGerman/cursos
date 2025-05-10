@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Programador - CSS Avanzado</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header class="head">
+        <nav class="navigation-bar">
+          <div class="logo">
+            <h2>Mi Portfolio</h2>
+          </div>
+          <div class="nav-links">
+            <a href="#projects">Proyectos</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#contact">Contacto</a>
+          </div>
+        </nav>
+      </header>
+      <!-- SECTION HERO -->
+      <section class="hero">
+        <h1>Hola, mi nombre es <span>Heim Codex</span></h1>
+        <p>Creo soluciones web con las últimas tecnologías</p>
+        <a href="#contacts" class="action-button">Contácteme</a>
+      </section>
+
+      <!-- SECTION OF PROJECTS -->
+      <section id="proyectos" class="projects">
+        <h2>Mis Proyectos</h2>
+        <div class="projects-grid">
+          <!-- Proyecto 1 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1642132652935-d750e2014719?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Proyecto 1"
+              />
+            </div>
+            <div class="project-content">
+              <h3>E-commerce</h3>
+              <p>Tienda online desarrollada con React y Node.js</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1642132652860-471b4228023e?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Proyecto 2"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Web Inmobiliaria</h3>
+              <p>Sitio web responsivo para una Inmobiliaria</p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1642132652803-01f9738d0446?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Proyecto 3"
+              />
+            </div>
+            <div class="project-content">
+              <h3>App de Finanzas</h3>
+              <p>Aplicación para gestión de finanzas personales</p>
+              <div class="project-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Tailwind</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section id="skills" class="skills">
+        <h2>Mis habilidades</h2>
+        <div class="skills-container">
+          <div class="item-skill">
+            <h3>Frontend</h3>
+            <p>HTML, CSS3, JavaScript, React, Vue.js</p>
+          </div>
+          <div class="item-skill">
+            <h3>Backend</h3>
+            <p>Node.js, Express, Python, Django</p>
+          </div>
+          <div class="item-skill">
+            <h3>Bases de datos</h3>
+            <p>MongoDB, MySQL, PostgresSQL</p>
+          </div>
+          <div class="item-skill">
+            <h3>Herramientas</h3>
+            <p>Git, Docker, AWS</p>
+          </div>
+          <div class="item-skill">
+            <h3>Diseño</h3>
+            <p>Figma, Adobe XD, UI/UX</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              class="form-control"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="action-button">Enviar mensaje</button>
+        </form>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="social-links">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+        </div>
+        <p>&copy; 2025 Mi Portfolio - Desarrollo con CSS Avanzado.</p>
+      </footer>
+    </div>
+  </body>
+</html>
