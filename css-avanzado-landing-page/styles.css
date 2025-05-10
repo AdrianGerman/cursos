@@ -95,6 +95,7 @@ img {
   font-size: var(--font-size-xl);
   margin-bottom: var(--spacing-md);
   --highlighted-color: var(--secondary-color);
+  margin: auto;
 }
 
 .hero:has(.action-button:hover) h1 {
@@ -260,6 +261,78 @@ img {
   animation: slide 1s ease;
   animation-timeline: view();
   animation-range: entry 20% cover 50%;
+}
+
+.contact {
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-form {
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: bold;
+  font-size: var(--font-size-base);
+}
+
+.form-control {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-base);
+}
+
+.form-group:focus-within label {
+  color: var(--primary-color);
+}
+
+.form-group:focus-within .form-control {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px
+    color-mix(in oklch, var(--primary-color) 30%, transparent);
+  outline: none;
+}
+
+.footer {
+  padding: var(--spacing-lg) 0;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.social-links a {
+  color: var(--light-color);
+  text-decoration: none;
+  font-size: var(--font-size-base);
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  color: var(--secondary-color);
 }
 
 @keyframes slide {
